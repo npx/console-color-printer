@@ -1,0 +1,20 @@
+{
+    "name": "npx/console-color-printer",
+    "description": "Simplistic, lightweight class to help with printing ANSI codes for colorful console output.",
+    "keywords": ["lightweight", "console", "color", "print", "php"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yannick Baron",
+            "email": "npx@g0x21k.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "ColorPrinter\\": "ColorPrinter"
+        }
+    }
+}
