@@ -1,4 +1,4 @@
-# Consoler Color Printer
+# Console Color Printer
 Simplistic, lightweight class to help with printing ANSI codes for colorful console output.
 
 **Usage Example:**
