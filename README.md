@@ -25,7 +25,7 @@ If you add this repository to your `composer.json`:
 ```
 you can install it via composer:
 ```
-composer require npx/console-color-printer
+composer require npx/console-color-printer dev-master
 ```
 
 and use it in your project:
