@@ -52,15 +52,17 @@ class ColorPrinter
 
         $codes = [];
         foreach ($mods as $mod) {
-            // determine the base (decoration=10, color=30, bgcolor=40)
-            $base = 30;
-            if (strlen($mod) == 1) {
-                $base = 10;
-            } elseif (substr($mod, 0, 2) == "bg") {
-                $base = 40;
+            // determine the base (decoration=0, color=30, bgcolor=40)
+            $base = 0;
+            if (strlen($mod) > 1) {
+                $base = 30;
 
-                // strip "bg" from given mod
-                $mod = substr($mod, 2);
+                if (substr($mod, 0, 2) == "bg") {
+                    $base = 40;
+
+                    // strip "bg" from given mod
+                    $mod = substr($mod, 2);
+                }
             }
 
             // retrieve modifier index
